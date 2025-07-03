@@ -31,13 +31,14 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#services">Skills</a>
+        <a href="#certificates">Certificates</a>
         <a href="#portfolio">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <!-- Home Section -->
-
+    <!-- ✅ You can change name, description, and image here -->
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hello, It's Me</h3>
@@ -47,25 +48,24 @@
           Welcome to my developer portfolio! Here you’ll find a glimpse into the wide range of technical skills and projects I’ve worked on. As a passionate and versatile developer, I enjoy building impactful mobile and web applications using Flutter, Dart, and Firebase.
           With a strong foundation in Computer Science (IoT specialization), I love solving real-world problems through code and continuous learning.
         </p>
-       <div class="social-media">
-  <a href="https://github.com/KrupaJakka/" target="_blank"><i class="bx bxl-github"></i></a>
-  <a href="https://www.linkedin.com/in/jakka-krupa-ratnam/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-</div>
-
+        <div class="social-media">
+          <a href="https://github.com/KrupaJakka/" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/jakka-krupa-ratnam/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
         <a href="assets/krupaResume.pdf" class="btn">Download Resume</a>
       </div>
 
       <div class="home-img">
-        <img src="images/22MH1A4922.png" alt="" />
+        <img src="images/22MH1A4922.png" alt="Profile Image" />
       </div>
     </section>
 
-    <!-- about -->
+    <!-- About Section -->
+    <!-- ✅ You can update the paragraph and image -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="images/pro.jpg" alt="" />
+        <img src="images/pro.jpg" alt="About Image" />
       </div>
-
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
         <h3>Flutter Developer</h3>
@@ -76,8 +76,8 @@
       </div>
     </section>
 
-    <!-- services -->
-
+    <!-- Skills Section -->
+    <!-- ✅ You can edit skill names/descriptions -->
     <section class="services" id="services">
       <h2 class="heading">My <span>Skills</span></h2>
       <div class="services-container">
@@ -110,38 +110,56 @@
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Projects</span></h2>
-
+    <!-- Certificates Section -->
+    <!-- ✅ You can change images and titles/description for certificates -->
+    <section class="portfolio" id="certificates">
+      <h2 class="heading">My <span>Certificates</span></h2>
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="images/port1.jpg" alt="" />
+          <img src="images/it_specialist.png" alt="Java Programming Certificate" />
+          <div class="portfolio-layer">
+            <h4>Java Programming</h4>
+            <p>Certified by CertNexus / Pearson as an IT Specialist (July 2024)</p>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/google.jpg" alt="Flutter Course Certificate" />
+          <div class="portfolio-layer">
+            <h4>Google Flutter</h4>
+            <p>Certified by Technical Hub (July 2025)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- ✅ To add project links, wrap content inside <a> tag -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/port1.jpg" alt="Crave Cuisines" />
           <div class="portfolio-layer">
             <h4>Crave Cuisines</h4>
             <p>Food delivery app with Google login, order tracking & Firebase backend.</p>
           </div>
         </div>
-
         <div class="portfolio-box">
-          <img src="images/port2.jpg" alt="" />
+          <img src="images/port2.jpg" alt="GitHub Profile Clone" />
           <div class="portfolio-layer">
             <h4>GitHub Profile Clone</h4>
             <p>Displays real-time GitHub stats using REST API & Flutter UI.</p>
           </div>
         </div>
-
         <div class="portfolio-box">
-          <img src="images/port3.jpg" alt="" />
+          <img src="images/port3.jpg" alt="HOOT App" />
           <div class="portfolio-layer">
             <h4>HOOT Ed-Tech App</h4>
             <p>Interactive LSRW learning app with speech input/output and Firebase backend.</p>
           </div>
         </div>
-
         <div class="portfolio-box">
-          <img src="images/port6.jpg" alt="" />
+          <img src="images/port6.jpg" alt="Guess the Number Game" />
           <div class="portfolio-layer">
             <h4>Guess the Number Game</h4>
             <p>Fun browser-based JS game with animation and interaction.</p>
@@ -150,50 +168,43 @@
       </div>
     </section>
 
-    <!-- contact -->
+    <!-- Contact Section -->
+    <!-- ✅ You can change email address and placeholder texts -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="https://formsubmit.co/kruparatnamjakka22@gmail.com" method="POST">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="input-box">
+          <input type="tel" name="mobile" placeholder="Mobile Number" required />
+          <input type="text" name="_subject" placeholder="Email Subject" required />
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
 
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me!</span></h2>
-
-  <form action="https://formsubmit.co/kruparatnamjakka22@gmail.com" method="POST">
-    <div class="input-box">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-    </div>
-    <div class="input-box">
-      <input type="tel" name="mobile" placeholder="Mobile Number" required />
-      <input type="text" name="_subject" placeholder="Email Subject" required />
-    </div>
-    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-    
-    <!-- Optional hidden settings -->
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_template" value="box" />
-    
-    <input type="submit" value="Send Message" class="btn" />
-  </form>
-</section>
-
-
-    <!-- footer -->
-
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-text">
         <p>© 2025 Jakka Krupa Ratnam | All Rights Reserved</p>
       </div>
-
       <div class="footer-iconTap">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
 
-    <!-- Scroll reveal -->
+    <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- typed js -->
+    <!-- Typed.js for typing effect -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- custom js -->
+    <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
   </body>
 </html>
