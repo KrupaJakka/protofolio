@@ -52,7 +52,7 @@
   <a href="https://www.linkedin.com/in/jakka-krupa-ratnam/" target="_blank"><i class="bx bxl-linkedin"></i></a>
 </div>
 
-        <a href="assets/JKR_resume.pdf" class="btn">Download Resume</a>
+        <a href="assets/krupaResume.pdf" class="btn">Download Resume</a>
       </div>
 
       <div class="home-img">
@@ -152,22 +152,28 @@
 
     <!-- contact -->
 
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="mailto:kruparatnamjakka22@gmail.com" method="post" enctype="text/plain">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
-        </div>
-        <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
+  <form action="https://formsubmit.co/kruparatnamjakka22@gmail.com" method="POST">
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+    </div>
+    <div class="input-box">
+      <input type="tel" name="mobile" placeholder="Mobile Number" required />
+      <input type="text" name="_subject" placeholder="Email Subject" required />
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    
+    <!-- Optional hidden settings -->
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="box" />
+    
+    <input type="submit" value="Send Message" class="btn" />
+  </form>
+</section>
+
 
     <!-- footer -->
 
